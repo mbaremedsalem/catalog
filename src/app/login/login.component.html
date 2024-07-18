@@ -1,0 +1,63 @@
+<div class="row w-100 mx-0 auth-page">
+    <div class="col-md-8 col-xl-6 mx-auto">
+      <div class="card">
+
+        <div class="bank-icon">
+            <img src="assets/icons/folder.png" width="200px" height="100px" alt="Icône de la banque">
+        </div>
+        <div class="row">
+          <div class="col-md-4 pe-md-0">
+
+          </div>
+          <div class="col-md-8 ps-md-0">
+            <div class="auth-form-wrapper px-4 py-5">
+              <a routerLink="." class="nobleui-logo d-block mb-2">Catalog-AUB</a>
+              <h5 class="text-muted fw-normal mb-4">Regroupement Des Applications Intern de AUB</h5>
+              <form class="forms-sample">
+                <div class="mb-3">
+                  <label for="username" class="form-label">Login</label>
+                  <input type="text"
+                         class="form-control"
+                         id="username"
+                         placeholder="login">
+                </div>
+                <div class="mb-3">
+                  <div class="password-input-container">
+                  <label for="password" class="form-label">Mot de passe</label>
+                  <input type="password"
+                         class="form-control"
+                         id="password"
+                         #passwordInput
+                         >
+                  <span class="eye-icon" (click)="togglePasswordVisibility(passwordInput)">
+                          <img [src]="showPassword ? 'assets/icons/view.png' : 'assets/icons/hide.png'" class="mat-iconleft" width="25px" height="25px" alt="">
+                        </span>
+                      </div>
+                </div>
+                <div>
+                  <a  class="txt1">
+                    Change Password?
+                  </a>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary me-2 mb-2 mb-md-0">
+                        <span>Connexion</span>
+                    </button>
+                  <!-- <button type="submit" class="btn btn-primary me-2 mb-2 mb-md-0" [disabled]="loginInProgress">
+                          
+                          <span *ngIf="!loginInProgress">Connexion</span>
+                            <mat-progress-spinner *ngIf="loginInProgress" mode="indeterminate" style="width: 20px; height: 20px; margin: auto;">
+
+                            </mat-progress-spinner>
+                 
+                 
+                          </button> -->
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,105 @@
+/* Ajouter ces styles dans votre fichier CSS ou SCSS */
+
+/* Centrer la page horizontalement */
+.password-input-container {
+    position: relative;
+  }
+  
+  
+  .password-input-container .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 24px; /* Ajustez la position comme vous le souhaitez */
+    bottom: 19px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .auth-page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* 100% de la hauteur de la vue (viewport height) */
+    }
+    
+    /* Ajustements pour rendre la mise en page plus homogène */
+    .card {
+      padding: 20px;
+      border: none; /* Supprimer la bordure de la carte si elle existe */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ajouter une légère ombre */
+      width: 400px;
+    }
+    
+    .auth-form-wrapper {
+      max-width: 400px; /* Largeur maximale du formulaire */
+      width: 100%;
+    }
+    
+    /* Ajustements pour rendre la mise en page plus sensible (responsive) */
+    @media (max-width: 768px) {
+      .auth-page {
+        padding: 20px; /* Ajouter un espace intérieur sur les côtés pour de petits écrans */
+      }
+    }
+  
+    /* Ajustements pour l'écriture */
+    body {
+      font-family: 'Arial', sans-serif; /* Utiliser une police de caractères sans empattement */
+      font-size: 16px; /* Taille de la police par défaut pour le corps du document */
+      color: #333; /* Couleur du texte par défaut */
+    }
+    
+    /* Ajustements pour les champs de saisie */
+    .form-control {
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      padding: 12px;
+      margin-bottom: 15px;
+      width: 90%;
+    }
+    
+    /* Style pour le bouton */
+    .btn-primary {
+      background-color: #1c8244;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      cursor: pointer;
+    }
+    
+    .btn-primary:hover {
+      background-color: #203003;
+    }
+    
+    /* Style pour l'image de l'icône de la banque */
+    .bank-icon {
+      max-width: 100px;
+      height: auto;
+      margin: 0 auto 15px; /* Centrer l'image horizontalement et ajouter un espace en dessous */
+      overflow: hidden; /* Cacher tout contenu débordant de l'image */
+    
+      border-radius: 50%; /* Rendre l'image circulaire en utilisant un rayon de 50% */
+    }
+    
+    .bank-icon img {
+      display: block; /* Assurer que l'image est traitée comme un bloc */
+      width: 100px; /* Remplir la largeur du conteneur */
+      height: auto; /* Ajuster automatiquement la hauteur en fonction de la largeur */
+      border: 2px solid #203003; /* Ajouter une bordure blanche pour un meilleur contraste */
+      border-radius: 50%; /* Rendre l'image elle-même circulaire */
+    }
+  
+    .nobleui-logo {
+      text-align: center; /* Centrer le texte horizontalement */
+      display: block;
+      margin-bottom: 15px;
+    }
+  
+    .txt1 {
+      font-family: Poppins-Regular;
+      font-size: 13px;
+      line-height: 1.4;
+      color: #999999;
+      text-align-last: right;
+      padding-left: 70%;
+    }
