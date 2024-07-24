@@ -1,11 +1,38 @@
 
     <header>
         <h1>Catalogue Des Applications</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher...">
+            <button>
+                <img src="assets/icons/search.png" class="mat-icontop" width="30px" height="30px" alt="Search">
+            </button>
+        </div>
     </header>
+    <!-- <header>
+        <h1>Catalogue Des Applications</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher..." [(ngModel)]="searchText">
+            <button (click)="search()">
+                <img src="assets/icons/search.png" class="mat-icontop" width="30px" height="30px" alt="Search">
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <div class="app-container">
+            <div class="app-card" *ngFor="let app of filteredApps">
+                <a [href]="app.link" target="_blank">
+                    <img [src]="app.image" alt="{{ app.name }}">
+                    <h2>{{ app.name }}</h2>
+                </a>
+            </div>
+        </div>
+    </main> -->
+    
     <main>
         <div class="app-container">
             <div class="app-card">
-                <a href="prod1-app-001:7103/CapitalBankerApp/" target="_blank">
+                <a href="https://django-jenkins.readthedocs.io/en/latest/#getting-started" target="_blank">
                     <img src="assets/icons/cbs.jpeg" alt="Intranet">
                     <h2>CAPITAL-BANKER</h2>
                 </a>
@@ -16,19 +43,68 @@
                     <h2>AUB-DOC</h2>
                 </a>
             </div>
-            <div class="app-card">
-                <a href="192.168.10.15:8085" target="_blank">
-                    <img src="assets/icons/cheque.png" alt="Bac Chèque">
-                    <h2>Chèquier</h2>
-                </a>
-            </div>
+
             <div class="app-card">
                 <a href="/appli/bac-cheque" target="_blank">
                     <img src="assets/icons/folders.png" alt="Bac Chèque">
-                    <h2>GED</h2>
+                    <h2>GEC/GED</h2>
                 </a>
             </div>
-            <!-- Ajoutez d'autres applications ici -->
+
+            <div class="app-card">
+                <a href="https://app.asana.com/-/login?_gl=1*j90sd6*_gcl_au*MTQ4NzkyNDgzNy4xNzIxNzUyMzcy*FPAU*MTQ4NzkyNDgzNy4xNzIxNzUyMzcy*_ga*ODQyNDk2ODIyLjE3MjE3NTIzNzI.*_ga_J1KDXMCQTH*MTcyMTc1MjM3MS4xLjEuMTcyMTc1MjM3NC41Ny4wLjYxMTU4MzE3Mw..*_fplc*U0F0VFVjaW5YdnpFT05sa0pzYlI1UzdXeHBxSVc3YXFJaTQ4S1QxWGElMkJwa3I0dkVocFJYT2dJdlFNb2tydG5PdnV0S1lmZVR3NUM2dVNlNWRvSmowNTMlMkZIMDNFaFJETVNvRFNwbW1UVWlPb1BIN3VEV0NWenN2Rkg4OGRGUSUzRCUzRA.." target="_blank">
+                    <img src="assets/icons/asana.png" alt="Bac Chèque">
+                    <h2>ASANA</h2>
+                </a>
+            </div>
+            
         </div>
     </main>
 
+
+    <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <img src="assets/aub_logo_text_to_the_side.svg" alt="Logo de votre site" />
+            </div>
+      
+            <div class="footer-contact">
+              <h5>Contactez-nous</h5>
+              <input class="sed-mail" type="email" placeholder="Envoyez-nous un e-mail ..." />
+            </div>
+      
+            <div class="footer-links">
+              <h5>Liens utiles: www.aub.mr</h5>
+              <ul>
+                <li><a href="#">À propos:</a></li>
+                <li><a href="#">Services:</a></li>
+                <li><a href="#">Contact:</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-logo">
+              <h5>Notre emplacement:</h5>
+              <p>Notre adresse ici:</p>
+              <p>Notre ville:</p>
+              <p>Notre code postal:</p>
+            </div>
+      
+            <div class="footer-social">
+              <h5>Restons connectés</h5>
+              <ul>
+                <li><a href="#">
+                <img src="assets/icons/facebook-logo.png" class="mat-icontop" width="30px" height="30px" alt=""> 
+                  
+                  Facebook</a></li>
+                <li><a href="#">
+                <img src="assets/icons/twitter.png" class="mat-icontop" width="30px" height="30px" alt=""> 
+                  Twitter</a></li>
+                <li><a href="#">
+                <img src="assets/icons/linkedin.png" class="mat-icontop" width="30px" height="30px" alt=""> 
+                  LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
